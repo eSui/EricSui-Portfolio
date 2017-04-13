@@ -1,0 +1,207 @@
+/*********************** Nav *******************************/
+
+#header li a {
+  color: #bec8d1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#header li a:hover{
+  color: #86cecb;
+}
+
+#header .navbar {
+  margin: 0px;
+  border: none;
+}
+
+#header .container-fluid{
+  background-color: #373b3e;
+}
+
+/*********************** Intro *******************************/
+
+#odd .container-fluid{
+  background-color: #137a7f;
+  height: 100vh;
+}
+
+#odd .container-fluid .intro-content{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bec8d1;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.void{
+  padding: 0px;
+  max-width: 250px;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  margin: 20px auto 15px;
+}
+
+#photo{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  margin: 200px auto 0px;
+  background-position: center;
+  background-image: url('eric.jpg');
+  background-size: contain;
+}
+
+.intro-content .void::after{
+  background-color: #137a7f;
+}
+
+.intro-content .void::after, hr.star-primary::after{
+   content: "\f121";
+   font-family: FontAwesome;
+   display: inline-block;
+   position: relative;
+   top:-.8em;
+   font-size: 2em;
+   padding: 0 .25em;
+   z-index: 1;
+}
+
+.intro-content h2:nth-child(4){
+  margin-bottom: 100px;
+}
+
+.media-container{
+  width: 500px;
+  height: 50px;
+  margin: 0px auto;
+
+}
+
+#odd .media-container .social::after{
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 2.5em;
+  padding: 0 .25em;
+  color: #bec8d1;
+  z-index: 1;
+}
+
+#git::after{
+  content: "\f092";
+}
+
+#link::after{
+  content: "\f08c";
+}
+
+#twitter::after{
+  content: "\f081";
+}
+
+#tumblr::after{
+  content: "\f174";
+}
+
+#odd .media-container .social:hover::after{
+  color: #373b3e;
+}
+
+
+/*********************** Projects *******************************/
+
+#work .content {
+  width: 1040px;
+  height: 700px;
+  margin: 30px auto 30px;
+}
+
+.content .project{
+  position: relative;
+  float: left;
+  width: 480px;
+  height: 300px;
+  margin: 30px 20px 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay{
+  position: absolute;
+  width: 480px;
+  height: 300px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  color: #bec8d1;
+  text-align: center;
+  line-height: 300px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+.project:hover > .overlay{
+  transition: all ease 0.5s;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.85)
+}
+
+
+#digify{
+  background-image: url('digi.png');
+}
+
+#retro{
+  background-image: url("retro.jpeg");
+}
+
+#gram{
+  background-image: url("snapgram.png");
+}
+#game{
+  background-image: url("cap.png");
+}
+
+/*********************** contact *******************************/
+
+#odd #contact {
+  width: 100%;
+  height: 600px;
+}
+
+.contact-content form{
+  margin-top: 50px;
+}
+
+input[type=text]{
+  border-radius: 4px;
+  width: 50%;
+  height: 50px;
+  margin: 0px 40px 20px 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #373b3e;
+}
+
+input:focus{
+  outline:none;
+}
+
+::-webkit-input-placeholder{
+  color: #373b3e;
+}
+
+input[type=submit]{
+  margin: 0px auto;
+}
+
+form div{
+  margin: 0px auto;
+}
+
+.contact-content{
+  margin: 0px auto;
+}
