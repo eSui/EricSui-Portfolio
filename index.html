@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Eric Sui</title>
   </head>
@@ -58,6 +59,10 @@
 
     <section id='work'>
       <div class="container-fluid">
+        <div class="work-title">
+          <h2>Projects</h2>
+          <hr class='void'>
+        </div>
         <div class="content">
           <div id='digify' class="project">
             <div class="overlay">
@@ -86,23 +91,45 @@
     <section id='odd'>
       <div id='contact' class="container-fluid">
         <div class="contact-content">
-          <form class="mail" action="mailto: eric.sui729@gmail.com" method="GET">
+          <div class="intro-content">
+            <h2>Contact</h2>
+            <hr class='void'>
+          </div>
+          <form class="mail" action="mailto: eric.sui729@gmail.com" method="GET" target='_blank'>
             <div class="row control">
               <input type="text" name="subject" placeholder='Subject'>
             </div>
             <div class="row ">
               <input type="text" name="message" value="" placeholder='Message'>
             </div>
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" class='btn btn-default'>
           </form>
         </div>
       </div>
     </section>
 
+    <section id='work'>
+      <div id='about' class="container-fluid">
+        <div class="work-title">
+          <h2>About</h2>
+          <hr class='void'>
+        </div>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
 
-
-
-
+    <section id='footer'>
+      <div class="row">
+        <div class="media-container">
+            <a href="https://www.github.com/eSui" id='git'class='social' target='_blank'></a>
+            <a href="https://www.linkedin.com/in/eric-sui" id='link'class='social' target='_blank'></a>
+            <a href="https://twitter.com/potato_kage" id='twitter'class='social' target='_blank'></a>
+            <a href="" id='tumblr'class='social' target='_blank'></a>
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>

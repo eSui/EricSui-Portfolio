@@ -25,7 +25,7 @@
   height: 100vh;
 }
 
-#odd .container-fluid .intro-content{
+#odd .container-fluid .intro-content, #work .container-fluid .work-title{
   text-transform: uppercase;
   font-weight: 700;
   color: #bec8d1;
@@ -52,19 +52,18 @@
   background-size: contain;
 }
 
-.intro-content .void::after{
-  background-color: #137a7f;
-}
 
-.intro-content .void::after, hr.star-primary::after{
+
+.intro-content .void::after, hr.star-primary::after {
    content: "\f121";
    font-family: FontAwesome;
    display: inline-block;
    position: relative;
-   top:-.8em;
+   top:-.85em;
    font-size: 2em;
    padding: 0 .25em;
    z-index: 1;
+   background-color: #137a7f;
 }
 
 .intro-content h2:nth-child(4){
@@ -72,13 +71,12 @@
 }
 
 .media-container{
-  width: 500px;
+  width: 210px;
   height: 50px;
   margin: 0px auto;
-
 }
 
-#odd .media-container .social::after{
+#odd .media-container .social::after, #footer .media-container .social::after {
   font-family: FontAwesome;
   display: inline-block;
   font-size: 2.5em;
@@ -113,7 +111,7 @@
 #work .content {
   width: 1040px;
   height: 700px;
-  margin: 30px auto 30px;
+  margin: 30px auto 70px;
 }
 
 .content .project{
@@ -165,6 +163,23 @@
   background-image: url("cap.png");
 }
 
+#work .container-fluid .work-title{
+  color: #373b3e !important;
+  margin-top: 40px;
+}
+
+#work .work-title::after{
+  content: "\f121";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top:-1.35em;
+  font-size: 2em;
+  padding: 0 .25em;
+  z-index: 1;
+  background-color: white;
+}
+
 /*********************** contact *******************************/
 
 #odd #contact {
@@ -172,30 +187,32 @@
   height: 600px;
 }
 
-.contact-content form{
-  margin-top: 50px;
+.contact-content h2, form{
+  margin-top: 100px;
 }
 
 input[type=text]{
   border-radius: 4px;
   width: 50%;
   height: 50px;
-  margin: 0px 40px 20px 20px;
+  margin: 0px 0px 20px 25%;
+  color: #bec8d1;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #373b3e;
+  border-bottom: 2px solid 	#bec8d1;
 }
 
 input:focus{
   outline:none;
+  color: #bec8d1;
 }
 
 ::-webkit-input-placeholder{
-  color: #373b3e;
+  color: 	#bec8d1;
 }
 
 input[type=submit]{
-  margin: 0px auto;
+  margin-left: 48.5%;
 }
 
 form div{
@@ -204,4 +221,22 @@ form div{
 
 .contact-content{
   margin: 0px auto;
+}
+
+/*********************** About *******************************/
+
+#about .content{
+  width: 500px;
+  height: 275px !important;
+}
+
+/*********************** Footer *******************************/
+
+#footer .row{
+  height: 75px;
+  background-color: #373b3e;
+}
+
+#footer .media-container .social:hover::after{
+  color: #e12885;
 }
