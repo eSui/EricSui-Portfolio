@@ -111,7 +111,7 @@
 #work .content {
   width: 1040px;
   height: 700px;
-  margin: 30px auto 70px;
+  margin: 10px auto 70px;
 }
 
 .content .project{
@@ -226,8 +226,10 @@ form div{
 /*********************** About *******************************/
 
 #about .content{
-  width: 500px;
-  height: 275px !important;
+  width: 600px;
+  height: 290px !important;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /*********************** Footer *******************************/
